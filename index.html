@@ -35,6 +35,14 @@
 </head>
 
 <body>
+    <form id="f1" name="f1" action="javascript:void()" onsubmit="if(this.t1.value!=null &amp;&amp; this.t1.value!='')
+    parent.findString(this.t1.value);return false;" class="search-bar">
+        <input type="text" id="t1" name="t1" value="" size="20" pattern=".*\S.*" required>
+        <button class="search-btn" name="b1" type="submit">
+            <span>Search</span>
+        </button>
+    </form>
+
     <!-- Preloader -->
     <div id="preloader">
         <div class="display-table">
@@ -346,9 +354,9 @@
     </nav>
     <!-- main page -->
     <div class="main">
-        <div class="searchItem search1">
+        <!-- <div class="searchItem search1">
             <img src="images/search.svg" alt="">
-        </div>
+        </div> -->
         <div class="container">
             <!-- s:title -->
             <div class="main__title">
@@ -370,7 +378,7 @@
                 <div class="main__widged__item ">
                     <div class="row ">
                         <div class="col-lg-4 col-sm-4 col-md-4 ">
-                            <div class="main__widged__box " id="topleaderboard">
+                            <div class="main__widged__box" id="topleaderboard">
                                 <div class="main__widged__video ">
                                     <a href="https://www.youtube.com/embed/daUjdknlP6E?autoplay=1&loop=1&controls=0&showinfo=0&playlist=daUjdknlP6E " target="_blank ">
                                         <div class="main__widged__video--btnplay " id="submit1 " onclick="playPause() ">
@@ -393,13 +401,13 @@
                                         </div>
                                     </div> -->
                                 </div>
-                                <img src="images/desktop/leaderboard2.jpg ">
+                                <img src="images/desktop/leaderboard2.jpg">
                                 <div class="main__widged__tools ">
-                                    <div class="main__widged__tools--1 " id="moremenu1 ">
+                                    <div class="main__widged__tools--1" id="moremenu1 ">
                                         <div class="tooltiptext ">More Option</div>
                                         <div class="more more1 ">
                                             <img src="images/more-horizontal.svg ">
-                                            <div class="more-menu ">
+                                            <div class="more-menu">
                                                 <ul>
                                                     <li class="trigger ">Spesification</li>
                                                     <li> <a href="https://drive.google.com/file/d/1D5NRWlTYbFlko5TyWWQk2Bfryy1ZW2br/view " target="blank ">Download Template</a></li>
@@ -407,7 +415,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="main__widged__tools--2 ">Top Leaderboard</div>
+                                    <div class="main__widged__tools--2 ">
+                                        <p>Top Leaderboard</p>
+                                    </div>
                                     <div class="main__widged__tools--3 " id="livemenu ">
                                         <a href="http://iklan.tribunnews.com/preview/desktop/leaderboard/index.html " target="blank ">
                                             <div class="tooltiptext ">Live Preview</div>
@@ -6820,11 +6830,11 @@
     <script type="text/javascript" src="js/main.js "></script>
     <script type="text/javascript" src="js/download.js"></script>
     <script type="text/javascript" src="js/video.js"></script>
-    <script type="text/javascript" src="js/find-in-nw.js"></script>
+    <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
 
-    <script>
-        findInNw.initialize();
-    </script>
+
+
+
 </body>
 
 </html>
