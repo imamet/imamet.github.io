@@ -144,6 +144,14 @@ p {
     width: 147px;
 }
 
+.itemCard__item1 img {
+    width: 90px;
+}
+
+.itemCard__item2 img {
+    width: 140px;
+}
+
 .itemBottom__left {
     width: 50%;
 }
@@ -202,6 +210,12 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.itemRight2:hover {
+    transform: translateY(-5px);
 }
 
 .itemRight3 {
@@ -216,6 +230,12 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.itemRight3:hover {
+    transform: translateY(-5px);
 }
 
 .grid {
@@ -246,6 +266,10 @@ p {
 }
 
 .mainWrap2__mid {
+    margin-right: 40px;
+}
+
+.mainWrap2__right {
     margin-right: 40px;
 }
 
@@ -655,6 +679,7 @@ footer {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
     .mainWrap3>div {
         width: 40%;
@@ -670,6 +695,10 @@ footer {
     }
     .mainWrap3__item3 {
         margin-bottom: 20px;
+    }
+    .itemCard3 {
+        width: 100%;
+        height: 140px;
     }
     .itemCard3__title {
         font-size: 13px;
