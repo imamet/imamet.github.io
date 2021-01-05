@@ -574,6 +574,10 @@ footer {
     width: 20px;
 }
 
+.block {
+    cursor: not-allowed;
+}
+
 @media (max-width: 992px) {
     .wrapInventory {
         width: 900px;
