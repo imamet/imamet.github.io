@@ -1,4 +1,4 @@
-// set time 1
+  // set time 1
         let a = "21:00:00";
         let date1 = new Date();
         date1.setHours(a.split(":")[0]);
@@ -7,9 +7,7 @@
         let r = date1 - new Date();
         setTimeout(function() {
             $('.awal').addClass('show');
-            $('.keenam.show').removeClass('show');
-
-        }, r); 
+        }, r);
         // set time 2
         let b = "22:00:00";
         let date2 = new Date();
@@ -68,4 +66,13 @@
             $('.keenam').addClass('show');
             $('.kelima.show').removeClass('show');
         }, w);
-
+        // set time reset
+        let g = "20:59:59";
+        let date7 = new Date();
+        date7.setHours(g.split(":")[0]);
+        date7.setMinutes(g.split(":")[1]);
+        date7.setSeconds(g.split(":")[2]);
+        let x = date7 - new Date();
+        setTimeout(function() {
+            $('.keenam.show').removeClass('show');
+        }, x);
