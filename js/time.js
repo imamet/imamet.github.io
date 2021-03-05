@@ -1,15 +1,4 @@
- // set time 1
-        let a = "21:00:00";
-        let date1 = new Date();
-        date1.setHours(a.split(":")[0]);
-        date1.setMinutes(a.split(":")[1]);
-        date1.setSeconds(a.split(":")[2]);
-        let r = date1 - new Date();
-        setTimeout(function() {
-            $('.awal').addClass('show');
-            $('.keenam.show').removeClass('show');
-
-        }, r);
+ 
         // set time 2
         let b = "22:00:00";
         let date2 = new Date();
@@ -68,3 +57,15 @@
             $('.keenam').addClass('show');
             $('.kelima.show').removeClass('show');
         }, w);
+// set time 1
+        let a = "21:00:00";
+        let date1 = new Date();
+        date1.setHours(a.split(":")[0]);
+        date1.setMinutes(a.split(":")[1]);
+        date1.setSeconds(a.split(":")[2]);
+        let r = date1 - new Date();
+        setTimeout(function() {
+            $('.awal').addClass('show');
+            $('.keenam.show').removeClass('show');
+
+        }, r);
